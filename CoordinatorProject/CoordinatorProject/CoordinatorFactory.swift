@@ -7,10 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+enum Coordinators
+{
+    case coordinator1(navigationController: UINavigationController)
+    case coordinator2(navigationController: UINavigationController)
+}
 
 struct CoordinatorFactory
 {
-    func loadViewController<T:CoordinatorProtocol>(coordinator: Coordinators) -> T? {
+    func loadCoordinator<T:CoordinatorProtocol>(coordinator: Coordinators) -> T? {
         
         switch coordinator{
         case .coordinator1(let navigationController):

@@ -9,12 +9,6 @@
 import Foundation
 import UIKit
 
-enum Coordinators
-{
-    case coordinator1(navigationController: UINavigationController)
-    case coordinator2(navigationController: UINavigationController)
-}
-
 public struct CoordinatorController: CoordinatorProtocol
 {
     var navigationController: UINavigationController
@@ -27,10 +21,13 @@ public struct CoordinatorController: CoordinatorProtocol
     
     public func start(){
         
-        guard let coordinator = factory.loadViewController(coordinator: .coordinator1(navigationController: navigationController)) as? Coordinator1 else { return }
+        guard let coordinator: Coordinator1 = factory.loadCoordinator(coordinator: .coordinator1(navigationController: navigationController)) else { return }
+        coordinator.start()
     }
     
     public func startCoordinator2(){
         
+        guard let coordinator: Coordinator2 = factory.loadCoordinator(coordinator: .coordinator2(navigationController: navigationController)) else { return }
+        coordinator.start()
     }
 }

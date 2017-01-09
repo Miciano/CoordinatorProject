@@ -9,16 +9,10 @@
 import Foundation
 import UIKit
 
-enum Coordinator1ViewsControllers {
-    
-    case viewController()
-    case greenViewController()
-}
-
-public struct Coordinator1: CoordinatorProtocol
+public struct Coordinator1: CoordinatorProtocol, CoordinatorFactoryProtocol
 {
     var navigationController: UINavigationController
-    var factory: Coordinator1ViewControllerFactory = Coordinator1ViewControllerFactory()
+    var factory: ViewControllerFactory = ViewControllerFactory()
     
     init(with navigationController: UINavigationController) {
         
@@ -27,7 +21,7 @@ public struct Coordinator1: CoordinatorProtocol
     
     public func start() {
         
-        guard let controller = factory.loadViewController(controller: .viewController()) as? ViewController else { return }
+        guard let controller: ViewController = factory.loadViewController(controller: .viewController()) else { return }
         
         controller.dismissAction = { _ in
             
@@ -38,7 +32,7 @@ public struct Coordinator1: CoordinatorProtocol
     
     public func startGreenView() {
         
-        guard let controller = factory.loadViewController(controller: .greenViewController()) as? GreenViewController else { return }
+        guard let controller: GreenViewController = factory.loadViewController(controller: .greenViewController()) else { return }
         controller.dismissAction = { _ in
         
         }

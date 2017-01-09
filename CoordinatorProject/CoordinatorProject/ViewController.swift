@@ -20,9 +20,16 @@ class ViewController: UIViewController, Dismissable {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func loadView() {
+        let view = UIView()
+        view.backgroundColor = UIColor.brown
+        self.view = view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
