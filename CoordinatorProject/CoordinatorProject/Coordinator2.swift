@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-struct Coordinator2: CoordinatorProtocol, CoordinatorFactoryProtocol {
+struct Coordinator2: CoordinatorProtocol, CoordinatorFactoryProtocol, DismissableCoordinator {
     
     var navigationController: UINavigationController
     var factory: ViewControllerFactory = ViewControllerFactory()
+    var dismissAction: DismissCoordinator = {}
     
     init(with navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -23,7 +24,7 @@ struct Coordinator2: CoordinatorProtocol, CoordinatorFactoryProtocol {
         guard let controller: BlueViewController = factory.loadViewController(controller: .blueViewController()) else { return }
         
         controller.dismissAction = { _ in
-            
+            self.startBlueView()
         }
         
         navigationController.pushViewController(controller, animated: true)
@@ -35,7 +36,7 @@ struct Coordinator2: CoordinatorProtocol, CoordinatorFactoryProtocol {
         guard let controller: RedViewController = factory.loadViewController(controller: .redViewController()) else { return }
         
         controller.dismissAction = { _ in
-            
+            self.callDismiss()
         }
         
         navigationController.pushViewController(controller, animated: true)

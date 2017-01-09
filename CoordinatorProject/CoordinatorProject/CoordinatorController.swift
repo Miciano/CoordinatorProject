@@ -21,13 +21,19 @@ public struct CoordinatorController: CoordinatorProtocol
     
     public func start(){
         
-        guard let coordinator: Coordinator1 = factory.loadCoordinator(coordinator: .coordinator1(navigationController: navigationController)) else { return }
+        guard var coordinator: Coordinator1 = factory.loadCoordinator(coordinator: .coordinator1(navigationController: navigationController)) else { return }
+        coordinator.dismissAction = {
+            self.startCoordinator2()
+        }
         coordinator.start()
     }
     
     public func startCoordinator2(){
         
-        guard let coordinator: Coordinator2 = factory.loadCoordinator(coordinator: .coordinator2(navigationController: navigationController)) else { return }
+        guard var coordinator: Coordinator2 = factory.loadCoordinator(coordinator: .coordinator2(navigationController: navigationController)) else { return }
+        coordinator.dismissAction = {
+            self.start()
+        }
         coordinator.start()
     }
 }

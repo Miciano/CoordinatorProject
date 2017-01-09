@@ -15,6 +15,12 @@ class BlueViewController: UIViewController, Dismissable
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        guard let view = Bundle.main.loadNibNamed("BlueView", owner: self, options: nil)?.last as? BlueView else { return }
+        view.handlerAction = ({
+            self.callDismiss()
+        })
+        
+        self.view = view
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -1,5 +1,5 @@
 //
-//  RedViewController.swift
+//  BrownViewController.swift
 //  CoordinatorProject
 //
 //  Created by Fabio Miciano on 09/01/17.
@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class RedViewController: UIViewController, Dismissable
+class BrownViewController: UIViewController, Dismissable
 {
     var dismissAction: DismissViewController = {_ in }
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        guard let view = Bundle.main.loadNibNamed("RedView", owner: self, options: nil)?.last as? RedView else { return }
+        guard let view = Bundle.main.loadNibNamed("BrownView", owner: self, options: nil)?.last as? BrownView else { return }
         view.handlerAction = ({
             self.callDismiss()
         })
@@ -26,4 +26,6 @@ class RedViewController: UIViewController, Dismissable
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 }

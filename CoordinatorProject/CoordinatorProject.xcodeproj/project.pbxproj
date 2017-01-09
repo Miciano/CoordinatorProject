@@ -9,8 +9,17 @@
 /* Begin PBXBuildFile section */
 		981962FC1E2417EB00848F13 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962FB1E2417EB00848F13 /* ViewControllerFactory.swift */; };
 		981962FE1E24186300848F13 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */; };
+		981963041E241B4F00848F13 /* BrownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963031E241B4F00848F13 /* BrownViewController.swift */; };
+		981963061E241BF000848F13 /* BrownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981963051E241BF000848F13 /* BrownView.xib */; };
+		9819630A1E241CFF00848F13 /* BrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963091E241CFF00848F13 /* BrownView.swift */; };
+		9819630D1E241F1600848F13 /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819630C1E241F1600848F13 /* GreenView.swift */; };
+		9819630F1E241F5200848F13 /* GreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9819630E1E241F5200848F13 /* GreenView.xib */; };
+		981963111E2420C300848F13 /* DismissableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963101E2420C300848F13 /* DismissableCoordinator.swift */; };
+		981963151E2421FB00848F13 /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963141E2421FB00848F13 /* BlueView.swift */; };
+		981963171E24222D00848F13 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963161E24222D00848F13 /* RedView.swift */; };
+		981963191E24224B00848F13 /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981963181E24224B00848F13 /* BlueView.xib */; };
+		9819631B1E24232400848F13 /* RedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9819631A1E24232400848F13 /* RedView.xib */; };
 		98CA7CE71E23EB0D0078F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */; };
-		98CA7CE91E23EB0D0078F798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CE81E23EB0D0078F798 /* ViewController.swift */; };
 		98CA7CEE1E23EB0D0078F798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA7CED1E23EB0D0078F798 /* Assets.xcassets */; };
 		98CA7CF11E23EB0D0078F798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CA7CEF1E23EB0D0078F798 /* LaunchScreen.storyboard */; };
 		98CA7CF91E23EB250078F798 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CF81E23EB250078F798 /* GreenViewController.swift */; };
@@ -27,9 +36,18 @@
 /* Begin PBXFileReference section */
 		981962FB1E2417EB00848F13 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		981963031E241B4F00848F13 /* BrownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownViewController.swift; sourceTree = "<group>"; };
+		981963051E241BF000848F13 /* BrownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrownView.xib; sourceTree = "<group>"; };
+		981963091E241CFF00848F13 /* BrownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownView.swift; sourceTree = "<group>"; };
+		9819630C1E241F1600848F13 /* GreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
+		9819630E1E241F5200848F13 /* GreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenView.xib; sourceTree = "<group>"; };
+		981963101E2420C300848F13 /* DismissableCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableCoordinator.swift; sourceTree = "<group>"; };
+		981963141E2421FB00848F13 /* BlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
+		981963161E24222D00848F13 /* RedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		981963181E24224B00848F13 /* BlueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
+		9819631A1E24232400848F13 /* RedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedView.xib; sourceTree = "<group>"; };
 		98CA7CE31E23EB0D0078F798 /* CoordinatorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98CA7CE81E23EB0D0078F798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98CA7CED1E23EB0D0078F798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CA7CF01E23EB0D0078F798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CA7CF21E23EB0D0078F798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +79,7 @@
 				98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */,
 				98CA7D0C1E2401FA0078F798 /* Dismissable.swift */,
 				981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */,
+				981963101E2420C300848F13 /* DismissableCoordinator.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -72,6 +91,48 @@
 				981962FB1E2417EB00848F13 /* ViewControllerFactory.swift */,
 			);
 			name = Factory;
+			sourceTree = "<group>";
+		};
+		981963001E241A9700848F13 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9819630B1E241F0300848F13 /* View */,
+				98CA7CF81E23EB250078F798 /* GreenViewController.swift */,
+				981963031E241B4F00848F13 /* BrownViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9819630B1E241F0300848F13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				981963051E241BF000848F13 /* BrownView.xib */,
+				981963091E241CFF00848F13 /* BrownView.swift */,
+				9819630C1E241F1600848F13 /* GreenView.swift */,
+				9819630E1E241F5200848F13 /* GreenView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		981963121E2421E600848F13 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				981963131E2421EF00848F13 /* View */,
+				98CA7CFA1E23EB330078F798 /* RedViewController.swift */,
+				98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		981963131E2421EF00848F13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				981963141E2421FB00848F13 /* BlueView.swift */,
+				981963181E24224B00848F13 /* BlueView.xib */,
+				981963161E24222D00848F13 /* RedView.swift */,
+				9819631A1E24232400848F13 /* RedView.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		98CA7CDA1E23EB0D0078F798 = {
@@ -109,8 +170,7 @@
 		98CA7D001E23FCE90078F798 /* Coordinator1 */ = {
 			isa = PBXGroup;
 			children = (
-				98CA7CE81E23EB0D0078F798 /* ViewController.swift */,
-				98CA7CF81E23EB250078F798 /* GreenViewController.swift */,
+				981963001E241A9700848F13 /* ViewController */,
 				98CA7D021E23FD060078F798 /* Coordinator1.swift */,
 			);
 			name = Coordinator1;
@@ -119,8 +179,7 @@
 		98CA7D011E23FCF70078F798 /* Coordinator2 */ = {
 			isa = PBXGroup;
 			children = (
-				98CA7CFA1E23EB330078F798 /* RedViewController.swift */,
-				98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */,
+				981963121E2421E600848F13 /* ViewController */,
 				98CA7D041E23FD0E0078F798 /* Coordinator2.swift */,
 			);
 			name = Coordinator2;
@@ -186,7 +245,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9819631B1E24232400848F13 /* RedView.xib in Resources */,
+				981963061E241BF000848F13 /* BrownView.xib in Resources */,
 				98CA7CF11E23EB0D0078F798 /* LaunchScreen.storyboard in Resources */,
+				981963191E24224B00848F13 /* BlueView.xib in Resources */,
+				9819630F1E241F5200848F13 /* GreenView.xib in Resources */,
 				98CA7CEE1E23EB0D0078F798 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,13 +267,18 @@
 				98CA7D0F1E2403E70078F798 /* CoordinatorFactory.swift in Sources */,
 				981962FE1E24186300848F13 /* CoordinatorFactoryProtocol.swift in Sources */,
 				98CA7D051E23FD0E0078F798 /* Coordinator2.swift in Sources */,
-				98CA7CE91E23EB0D0078F798 /* ViewController.swift in Sources */,
+				9819630D1E241F1600848F13 /* GreenView.swift in Sources */,
 				981962FC1E2417EB00848F13 /* ViewControllerFactory.swift in Sources */,
+				981963171E24222D00848F13 /* RedView.swift in Sources */,
+				981963041E241B4F00848F13 /* BrownViewController.swift in Sources */,
 				98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */,
 				98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */,
+				981963111E2420C300848F13 /* DismissableCoordinator.swift in Sources */,
 				98CA7CFD1E23EB3D0078F798 /* BlueViewController.swift in Sources */,
 				98CA7D0D1E2401FA0078F798 /* Dismissable.swift in Sources */,
 				98CA7CE71E23EB0D0078F798 /* AppDelegate.swift in Sources */,
+				981963151E2421FB00848F13 /* BlueView.swift in Sources */,
+				9819630A1E241CFF00848F13 /* BrownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

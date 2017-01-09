@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 enum AppScreens {
-    case viewController()
+    case brownViewController()
     case greenViewController()
     case blueViewController()
     case redViewController()
@@ -21,8 +21,8 @@ struct ViewControllerFactory {
     func loadViewController<T:UIViewController>(controller: AppScreens) -> T? {
         
         switch controller{
-        case .viewController():
-            return ViewController() as? T
+        case .brownViewController():
+            return BrownViewController() as? T
         case .greenViewController():
             return GreenViewController() as? T
         case .blueViewController():

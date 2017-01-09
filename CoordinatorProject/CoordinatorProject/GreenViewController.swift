@@ -15,6 +15,12 @@ class GreenViewController: UIViewController, Dismissable
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        guard let view = Bundle.main.loadNibNamed("GreenView", owner: self, options: nil)?.last as? GreenView else { return }
+        view.handlerAction = ({
+            self.callDismiss()
+        })
+        
+        self.view = view
     }
     
     required init?(coder aDecoder: NSCoder) {
