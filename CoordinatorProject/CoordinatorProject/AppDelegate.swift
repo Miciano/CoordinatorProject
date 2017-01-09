@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let coordinatorController = CoordinatorController(with: navigationController)
         self.coordinatorController = coordinatorController
         
-        
+        self.coordinatorController?.start()
         
         window?.makeKeyAndVisible()
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981962F51E240FBF00848F13 /* Coordinator2ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962F41E240FBF00848F13 /* Coordinator2ViewControllerFactory.swift */; };
 		98CA7CE71E23EB0D0078F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */; };
 		98CA7CE91E23EB0D0078F798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CE81E23EB0D0078F798 /* ViewController.swift */; };
 		98CA7CEE1E23EB0D0078F798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA7CED1E23EB0D0078F798 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		981962F41E240FBF00848F13 /* Coordinator2ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator2ViewControllerFactory.swift; sourceTree = "<group>"; };
 		98CA7CE31E23EB0D0078F798 /* CoordinatorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98CA7CE81E23EB0D0078F798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				98CA7CFA1E23EB330078F798 /* RedViewController.swift */,
 				98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */,
 				98CA7D041E23FD0E0078F798 /* Coordinator2.swift */,
+				981962F41E240FBF00848F13 /* Coordinator2ViewControllerFactory.swift */,
 			);
 			name = Coordinator2;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */,
 				98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */,
 				98CA7CFD1E23EB3D0078F798 /* BlueViewController.swift in Sources */,
+				981962F51E240FBF00848F13 /* Coordinator2ViewControllerFactory.swift in Sources */,
 				98CA7D0D1E2401FA0078F798 /* Dismissable.swift in Sources */,
 				98CA7D0B1E24001A0078F798 /* Coordinator1ViewControllerFactory.swift in Sources */,
 				98CA7CE71E23EB0D0078F798 /* AppDelegate.swift in Sources */,
@@ -344,6 +348,7 @@
 				98CA7CF71E23EB0D0078F798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

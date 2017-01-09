@@ -9,11 +9,41 @@
 import Foundation
 import UIKit
 
+enum Coordinator2ViewsControllers {
+    
+    case blueViewController()
+    case redViewController()
+}
+
 struct Coordinator2: CoordinatorProtocol {
     
     var navigationController: UINavigationController
+    var factory: Coordinator2ViewControllerFactory = Coordinator2ViewControllerFactory()
     
     init(with navigationController: UINavigationController) {
         self.navigationController = navigationController
+    }
+    
+    public func start() {
+        
+        guard let controller = factory.loadViewController(controller: .blueViewController()) as? BlueViewController else { return }
+        
+        controller.dismissAction = { _ in
+            
+        }
+        
+        navigationController.pushViewController(controller, animated: true)
+        
+    }
+    
+    public func startBlueView() {
+        
+        guard let controller = factory.loadViewController(controller: .redViewController()) as? RedViewController else { return }
+        
+        controller.dismissAction = { _ in
+            
+        }
+        
+        navigationController.pushViewController(controller, animated: true)
     }
 }
