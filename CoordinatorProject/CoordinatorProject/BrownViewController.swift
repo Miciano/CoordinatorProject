@@ -16,7 +16,7 @@ class BrownViewController: UIViewController, Dismissable
     init() {
         super.init(nibName: nil, bundle: nil)
         guard let view = Bundle.main.loadNibNamed("BrownView", owner: self, options: nil)?.last as? BrownView else { return }
-        view.handlerAction = ({
+        view.handler = ({
             self.callDismiss()
         })
         

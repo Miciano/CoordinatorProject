@@ -16,7 +16,7 @@ class RedViewController: UIViewController, Dismissable
     init() {
         super.init(nibName: nil, bundle: nil)
         guard let view = Bundle.main.loadNibNamed("RedView", owner: self, options: nil)?.last as? RedView else { return }
-        view.handlerAction = ({
+        view.handler = ({
             self.callDismiss()
         })
         

@@ -9,16 +9,21 @@
 import Foundation
 import UIKit
 
-class BrownView: UIView
+class BrownView: UIView, ActionView
 {
-    var handlerAction: ((Void)->Void)?
+    var handler: Handler = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    @IBAction func changeScreen(_ sender: UIButton) {
-        guard let handler = handlerAction else { return }
-        
+    func actionForCoordinator() {
+        guard let handler = handler else { return }
         handler()
+    }
+    
+    @IBAction func changeScreen(_ sender: UIButton) {
+        
+        actionForCoordinator()
     }
 }

@@ -9,17 +9,21 @@
 import Foundation
 import UIKit
 
-class GreenView: UIView {
+class GreenView: UIView, ActionView {
     
-    var handlerAction: ((Void)->Void)?
+    var handler: Handler = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    func actionForCoordinator() {
+        guard let handler = handler else { return }
+        handler()
+    }
+    
     @IBAction func changeCoordinator(_ sender: UIButton) {
         
-        guard let handler = handlerAction else { return }
-        handler()
+        actionForCoordinator()
     }
 }

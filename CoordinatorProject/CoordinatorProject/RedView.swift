@@ -9,16 +9,20 @@
 import Foundation
 import UIKit
 
-class RedView: UIView {
+class RedView: UIView, ActionView {
     
-    var handlerAction: ((Void)->Void)?
+    var handler: Handler = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    @IBAction func changeAction(_ sender: UIButton) {
-        guard let handler = handlerAction else { return }
+    func actionForCoordinator() {
+        guard let handler = handler else { return }
         handler()
+    }
+    
+    @IBAction func changeAction(_ sender: UIButton) {
+        actionForCoordinator()
     }
 }

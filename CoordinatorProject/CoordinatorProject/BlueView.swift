@@ -9,17 +9,22 @@
 import Foundation
 import UIKit
 
-class BlueView: UIView {
+class BlueView: UIView, ActionView {
     
-    var handlerAction: ((Void)->Void)?
+    var handler: Handler = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    func actionForCoordinator() {
+        guard let handler = handler else { return }
+        handler()
+    }
+    
+    
     @IBAction func changeAction(_ sender: UIButton) {
         
-        guard let handler = handlerAction else { return }
-        handler()
+        actionForCoordinator()
     }
 }
