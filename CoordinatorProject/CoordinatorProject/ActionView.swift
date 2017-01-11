@@ -8,8 +8,8 @@
 
 import Foundation
 
-typealias Handler = ((Void)->Void)?
+typealias Handler = ((Void)->Void)
 protocol ActionView {
-    var handler: Handler { get set }
+    var handler: Handler? { get set }
     func actionForCoordinator()
 }

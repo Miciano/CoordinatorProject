@@ -11,7 +11,7 @@ import UIKit
 
 class BlueView: UIView, ActionView {
     
-    var handler: Handler = nil
+    var handler: Handler?
     
     override func awakeFromNib() {
         super.awakeFromNib()

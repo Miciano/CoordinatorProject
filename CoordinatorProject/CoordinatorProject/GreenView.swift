@@ -11,7 +11,7 @@ import UIKit
 
 class GreenView: UIView, ActionView {
     
-    var handler: Handler = nil
+    var handler: Handler?
     
     override func awakeFromNib() {
         super.awakeFromNib()
