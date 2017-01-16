@@ -22,7 +22,7 @@ public struct Coordinator1: CoordinatorProtocol, CoordinatorFactoryProtocol, Dis
     
     public func start() {
         
-        guard let controller: BrownViewController = factory.loadViewController(controller: .brownViewController()) else { return }
+        guard let controller: BrownViewController = factory.loadViewController(controller: .brownViewController) else { return }
         
         controller.dismissAction = { _ in
             self.startGreenView()
@@ -33,7 +33,7 @@ public struct Coordinator1: CoordinatorProtocol, CoordinatorFactoryProtocol, Dis
     
     public func startGreenView() {
         
-        guard let controller: GreenViewController = factory.loadViewController(controller: .greenViewController()) else { return }
+        guard let controller: GreenViewController = factory.loadViewController(controller: .greenViewController) else { return }
         controller.dismissAction = { _ in
             self.callDismiss()
         }

@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 
+//: Sugestion 2 - The enums do not need to be encapsulated as methods
 enum AppScreens {
-    case brownViewController()
-    case greenViewController()
-    case blueViewController()
-    case redViewController()
+    case brownViewController
+    case greenViewController
+    case blueViewController
+    case redViewController
 }
 
 struct ViewControllerFactory {
@@ -21,13 +22,13 @@ struct ViewControllerFactory {
     func loadViewController<T:UIViewController>(controller: AppScreens) -> T? {
         
         switch controller{
-        case .brownViewController():
+        case .brownViewController:
             return BrownViewController() as? T
-        case .greenViewController():
+        case .greenViewController:
             return GreenViewController() as? T
-        case .blueViewController():
+        case .blueViewController:
             return BlueViewController() as? T
-        case .redViewController():
+        case .redViewController:
             return RedViewController() as? T
         }
     }
