@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol CoordinatorProtocol {
+protocol CoordinatorProtocol: Node {
     
     var navigationController: UINavigationController { get }
     

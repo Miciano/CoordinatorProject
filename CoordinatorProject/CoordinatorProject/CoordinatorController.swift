@@ -15,14 +15,14 @@ public struct CoordinatorController: CoordinatorProtocol
     
     //:Point 1: I believe that this factory should be allowed to
     //:be injected. This way, I can override on tests
-    let factory:CoordinatorFactory
+    let factory:NodeFactory
     
     public init(with navigationController: UINavigationController)
     {
-        self.init(with: navigationController, factory: CoordinatorFactory())
+        self.init(with: navigationController, factory: NodeFactory())
     }
     
-    public init(with navigationController: UINavigationController, factory:CoordinatorFactory)
+    public init(with navigationController: UINavigationController, factory:NodeFactory)
     {
         self.navigationController = navigationController
         self.factory = factory
@@ -31,7 +31,7 @@ public struct CoordinatorController: CoordinatorProtocol
     
     public func start(){
         
-        guard var coordinator: Coordinator1 = factory.loadCoordinator(coordinator: .coordinator1(navigationController: navigationController)) else { return }
+        guard var coordinator: Coordinator1 = factory.loadNode(node: .coordinator1(navigationController: navigationController)) else { return }
         coordinator.dismissAction = {
             self.startCoordinator2()
         }
@@ -40,7 +40,7 @@ public struct CoordinatorController: CoordinatorProtocol
     
     public func startCoordinator2(){
         
-        guard var coordinator: Coordinator2 = factory.loadCoordinator(coordinator: .coordinator2(navigationController: navigationController)) else { return }
+        guard var coordinator: Coordinator2 = factory.loadNode(node: .coordinator2(navigationController: navigationController)) else { return }
         coordinator.dismissAction = {
             self.start()
         }

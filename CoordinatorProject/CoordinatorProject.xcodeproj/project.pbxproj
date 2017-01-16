@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		981962FC1E2417EB00848F13 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962FB1E2417EB00848F13 /* ViewControllerFactory.swift */; };
-		981962FE1E24186300848F13 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */; };
+		785452BF1E2D496200688687 /* NodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785452BE1E2D496200688687 /* NodeFactory.swift */; };
+		981962FE1E24186300848F13 /* NodeFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962FD1E24186300848F13 /* NodeFactoryProtocol.swift */; };
 		981963041E241B4F00848F13 /* BrownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963031E241B4F00848F13 /* BrownViewController.swift */; };
 		981963061E241BF000848F13 /* BrownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981963051E241BF000848F13 /* BrownView.xib */; };
 		9819630A1E241CFF00848F13 /* BrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963091E241CFF00848F13 /* BrownView.swift */; };
@@ -30,12 +30,11 @@
 		98CA7D051E23FD0E0078F798 /* Coordinator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D041E23FD0E0078F798 /* Coordinator2.swift */; };
 		98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */; };
 		98CA7D0D1E2401FA0078F798 /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D0C1E2401FA0078F798 /* Dismissable.swift */; };
-		98CA7D0F1E2403E70078F798 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D0E1E2403E70078F798 /* CoordinatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		981962FB1E2417EB00848F13 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		785452BE1E2D496200688687 /* NodeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeFactory.swift; sourceTree = "<group>"; };
+		981962FD1E24186300848F13 /* NodeFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeFactoryProtocol.swift; sourceTree = "<group>"; };
 		981963031E241B4F00848F13 /* BrownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownViewController.swift; sourceTree = "<group>"; };
 		981963051E241BF000848F13 /* BrownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrownView.xib; sourceTree = "<group>"; };
 		981963091E241CFF00848F13 /* BrownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownView.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		98CA7D041E23FD0E0078F798 /* Coordinator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator2.swift; sourceTree = "<group>"; };
 		98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		98CA7D0C1E2401FA0078F798 /* Dismissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
-		98CA7D0E1E2403E70078F798 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,7 @@
 			children = (
 				98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */,
 				98CA7D0C1E2401FA0078F798 /* Dismissable.swift */,
-				981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */,
+				981962FD1E24186300848F13 /* NodeFactoryProtocol.swift */,
 				9879EBCD1E258F8B00C973C1 /* ActionView.swift */,
 			);
 			name = Protocols;
@@ -87,8 +85,7 @@
 		981962FF1E24195900848F13 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				98CA7D0E1E2403E70078F798 /* CoordinatorFactory.swift */,
-				981962FB1E2417EB00848F13 /* ViewControllerFactory.swift */,
+				785452BE1E2D496200688687 /* NodeFactory.swift */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -264,13 +261,12 @@
 				98CA7CFF1E23EB750078F798 /* CoordinatorController.swift in Sources */,
 				98CA7CFB1E23EB330078F798 /* RedViewController.swift in Sources */,
 				98CA7CF91E23EB250078F798 /* GreenViewController.swift in Sources */,
-				98CA7D0F1E2403E70078F798 /* CoordinatorFactory.swift in Sources */,
-				981962FE1E24186300848F13 /* CoordinatorFactoryProtocol.swift in Sources */,
+				981962FE1E24186300848F13 /* NodeFactoryProtocol.swift in Sources */,
 				98CA7D051E23FD0E0078F798 /* Coordinator2.swift in Sources */,
 				9819630D1E241F1600848F13 /* GreenView.swift in Sources */,
-				981962FC1E2417EB00848F13 /* ViewControllerFactory.swift in Sources */,
 				981963171E24222D00848F13 /* RedView.swift in Sources */,
 				981963041E241B4F00848F13 /* BrownViewController.swift in Sources */,
+				785452BF1E2D496200688687 /* NodeFactory.swift in Sources */,
 				98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */,
 				98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */,
 				9879EBCE1E258F8B00C973C1 /* ActionView.swift in Sources */,
