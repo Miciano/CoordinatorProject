@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol CoordinatorFactoryProtocol {
-    var factory: ViewControllerFactory { get }
+protocol NodeFactoryProtocol {
+    var factory: NodeFactory { get }
 }

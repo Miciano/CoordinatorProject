@@ -11,19 +11,13 @@ import UIKit
 
 class BrownView: UIView, ActionView
 {
-    var handler: Handler?
+    var handler: EmptyHandler?
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func actionForCoordinator() {
-        guard let handler = handler else { return }
-        handler()
-    }
-    
     @IBAction func changeScreen(_ sender: UIButton) {
-        
         actionForCoordinator()
     }
 }
