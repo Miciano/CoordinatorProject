@@ -12,12 +12,22 @@ import UIKit
 public struct CoordinatorController: CoordinatorProtocol
 {
     var navigationController: UINavigationController
-    var factory:CoordinatorFactory = CoordinatorFactory()
+    
+    //:Point 1: I believe that this factory should be allowed to
+    //:be injected. This way, I can override on tests
+    let factory:CoordinatorFactory
     
     public init(with navigationController: UINavigationController)
     {
-        self.navigationController = navigationController
+        self.init(with: navigationController, factory: CoordinatorFactory())
     }
+    
+    public init(with navigationController: UINavigationController, factory:CoordinatorFactory)
+    {
+        self.navigationController = navigationController
+        self.factory = factory
+    }
+    //: I applied this concept here, but can be exteded to the other Coordinators
     
     public func start(){
         

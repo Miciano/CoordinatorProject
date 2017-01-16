@@ -15,7 +15,7 @@ enum Coordinators
     case coordinator2(navigationController: UINavigationController)
 }
 
-struct CoordinatorFactory
+public struct CoordinatorFactory
 {
     func loadCoordinator<T:CoordinatorProtocol>(coordinator: Coordinators) -> T? {
         
