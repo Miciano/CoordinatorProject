@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-struct Coordinator2: CoordinatorProtocol, CoordinatorFactoryProtocol, DismissableCoordinator {
-    
+struct Coordinator2: CoordinatorProtocol, CoordinatorFactoryProtocol, Dismissable
+{    
     var navigationController: UINavigationController
     var factory: ViewControllerFactory = ViewControllerFactory()
     var dismissAction: DismissCoordinator = {}

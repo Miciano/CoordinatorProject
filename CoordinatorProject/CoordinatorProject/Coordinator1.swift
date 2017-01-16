@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public struct Coordinator1: CoordinatorProtocol, CoordinatorFactoryProtocol, DismissableCoordinator
+public struct Coordinator1: CoordinatorProtocol, CoordinatorFactoryProtocol, Dismissable
 {
     var navigationController: UINavigationController
     var factory: ViewControllerFactory = ViewControllerFactory()

@@ -14,7 +14,6 @@
 		9819630A1E241CFF00848F13 /* BrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963091E241CFF00848F13 /* BrownView.swift */; };
 		9819630D1E241F1600848F13 /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819630C1E241F1600848F13 /* GreenView.swift */; };
 		9819630F1E241F5200848F13 /* GreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9819630E1E241F5200848F13 /* GreenView.xib */; };
-		981963111E2420C300848F13 /* DismissableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963101E2420C300848F13 /* DismissableCoordinator.swift */; };
 		981963151E2421FB00848F13 /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963141E2421FB00848F13 /* BlueView.swift */; };
 		981963171E24222D00848F13 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963161E24222D00848F13 /* RedView.swift */; };
 		981963191E24224B00848F13 /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981963181E24224B00848F13 /* BlueView.xib */; };
@@ -42,7 +41,6 @@
 		981963091E241CFF00848F13 /* BrownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownView.swift; sourceTree = "<group>"; };
 		9819630C1E241F1600848F13 /* GreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
 		9819630E1E241F5200848F13 /* GreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenView.xib; sourceTree = "<group>"; };
-		981963101E2420C300848F13 /* DismissableCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissableCoordinator.swift; sourceTree = "<group>"; };
 		981963141E2421FB00848F13 /* BlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
 		981963161E24222D00848F13 /* RedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
 		981963181E24224B00848F13 /* BlueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */,
 				98CA7D0C1E2401FA0078F798 /* Dismissable.swift */,
 				981962FD1E24186300848F13 /* CoordinatorFactoryProtocol.swift */,
-				981963101E2420C300848F13 /* DismissableCoordinator.swift */,
 				9879EBCD1E258F8B00C973C1 /* ActionView.swift */,
 			);
 			name = Protocols;
@@ -276,7 +273,6 @@
 				981963041E241B4F00848F13 /* BrownViewController.swift in Sources */,
 				98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */,
 				98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */,
-				981963111E2420C300848F13 /* DismissableCoordinator.swift in Sources */,
 				9879EBCE1E258F8B00C973C1 /* ActionView.swift in Sources */,
 				98CA7CFD1E23EB3D0078F798 /* BlueViewController.swift in Sources */,
 				98CA7D0D1E2401FA0078F798 /* Dismissable.swift in Sources */,
