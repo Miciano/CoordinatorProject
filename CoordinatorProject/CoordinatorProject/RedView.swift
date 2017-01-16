@@ -11,15 +11,10 @@ import UIKit
 
 class RedView: UIView, ActionView {
     
-    var handler: Handler?
+    var handler: SelfViewHandler?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-    
-    func actionForCoordinator() {
-        guard let handler = handler else { return }
-        handler()
     }
     
     @IBAction func changeAction(_ sender: UIButton) {
