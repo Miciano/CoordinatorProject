@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var coordinatorController: CoordinatorController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -22,10 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController()
         window?.rootViewController = navigationController
         
-        let coordinatorController = CoordinatorController(with: navigationController)
-        self.coordinatorController = coordinatorController
-        
-        self.coordinatorController?.start()
+        let coordinator = Coordinator1(with: navigationController)
+        coordinator.start()
         
         window?.makeKeyAndVisible()
         

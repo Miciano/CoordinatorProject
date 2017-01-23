@@ -25,7 +25,6 @@
 		98CA7CF91E23EB250078F798 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CF81E23EB250078F798 /* GreenViewController.swift */; };
 		98CA7CFB1E23EB330078F798 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CFA1E23EB330078F798 /* RedViewController.swift */; };
 		98CA7CFD1E23EB3D0078F798 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */; };
-		98CA7CFF1E23EB750078F798 /* CoordinatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CFE1E23EB750078F798 /* CoordinatorController.swift */; };
 		98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D021E23FD060078F798 /* Coordinator1.swift */; };
 		98CA7D051E23FD0E0078F798 /* Coordinator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D041E23FD0E0078F798 /* Coordinator2.swift */; };
 		98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */; };
@@ -53,7 +52,6 @@
 		98CA7CF81E23EB250078F798 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		98CA7CFA1E23EB330078F798 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
-		98CA7CFE1E23EB750078F798 /* CoordinatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorController.swift; sourceTree = "<group>"; };
 		98CA7D021E23FD060078F798 /* Coordinator1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator1.swift; sourceTree = "<group>"; };
 		98CA7D041E23FD0E0078F798 /* Coordinator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator2.swift; sourceTree = "<group>"; };
 		98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 				98CA7CED1E23EB0D0078F798 /* Assets.xcassets */,
 				98CA7CEF1E23EB0D0078F798 /* LaunchScreen.storyboard */,
 				98CA7CF21E23EB0D0078F798 /* Info.plist */,
-				98CA7CFE1E23EB750078F798 /* CoordinatorController.swift */,
 			);
 			path = CoordinatorProject;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CA7CFF1E23EB750078F798 /* CoordinatorController.swift in Sources */,
 				98CA7CFB1E23EB330078F798 /* RedViewController.swift in Sources */,
 				98CA7CF91E23EB250078F798 /* GreenViewController.swift in Sources */,
 				981962FE1E24186300848F13 /* NodeFactoryProtocol.swift in Sources */,
