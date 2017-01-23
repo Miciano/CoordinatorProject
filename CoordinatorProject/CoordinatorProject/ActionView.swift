@@ -8,10 +8,6 @@
 
 import UIKit
 
-//: Suggestion 4 - The same way that the Dismissable protocol
-//: can use associated types to enhance declaration, the
-//: ActionView can also use it
-
 typealias EmptyHandler = ((Void)->Void)
 typealias SelfViewHandler = ((UIView)->Void)
 

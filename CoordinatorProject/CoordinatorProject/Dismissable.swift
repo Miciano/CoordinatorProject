@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 
-//: Suggestion 3 - This is a more complex one, but,
-//: here, the idea is to create an unique dismissable
-//: protocol. For Coordinator or for View Controller
 typealias DismissViewController = (UIViewController)-> Void
 typealias DismissCoordinator = (Void)-> Void
 

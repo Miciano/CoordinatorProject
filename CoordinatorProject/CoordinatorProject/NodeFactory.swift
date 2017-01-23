@@ -8,8 +8,6 @@
 
 import UIKit
 
-//: Suggestion 5 - Both factories can be consolidated on a single factory
-
 public protocol Node {}
 extension UIViewController: Node {}
 
