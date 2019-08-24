@@ -7,55 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		785452BF1E2D496200688687 /* NodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785452BE1E2D496200688687 /* NodeFactory.swift */; };
-		981962FE1E24186300848F13 /* NodeFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981962FD1E24186300848F13 /* NodeFactoryProtocol.swift */; };
-		981963041E241B4F00848F13 /* BrownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963031E241B4F00848F13 /* BrownViewController.swift */; };
-		981963061E241BF000848F13 /* BrownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981963051E241BF000848F13 /* BrownView.xib */; };
-		9819630A1E241CFF00848F13 /* BrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963091E241CFF00848F13 /* BrownView.swift */; };
-		9819630D1E241F1600848F13 /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819630C1E241F1600848F13 /* GreenView.swift */; };
-		9819630F1E241F5200848F13 /* GreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9819630E1E241F5200848F13 /* GreenView.xib */; };
-		981963151E2421FB00848F13 /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963141E2421FB00848F13 /* BlueView.swift */; };
-		981963171E24222D00848F13 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981963161E24222D00848F13 /* RedView.swift */; };
-		981963191E24224B00848F13 /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 981963181E24224B00848F13 /* BlueView.xib */; };
-		9819631B1E24232400848F13 /* RedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9819631A1E24232400848F13 /* RedView.xib */; };
-		9879EBCE1E258F8B00C973C1 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879EBCD1E258F8B00C973C1 /* ActionView.swift */; };
+		9831D07123115C840028D564 /* FinishControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D06E23115C840028D564 /* FinishControllerProtocol.swift */; };
+		9831D07223115C840028D564 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D06F23115C840028D564 /* Coordinator.swift */; };
+		9831D07323115C840028D564 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D07023115C840028D564 /* Presenter.swift */; };
+		9831D076231172C60028D564 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D075231172C60028D564 /* Errors.swift */; };
+		9831D07D2311738E0028D564 /* CoordinatorBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D07C2311738E0028D564 /* CoordinatorBlue.swift */; };
+		9831D082231173950028D564 /* IceBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9831D07E231173950028D564 /* IceBlueViewController.xib */; };
+		9831D083231173950028D564 /* BlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9831D07F231173950028D564 /* BlueViewController.xib */; };
+		9831D084231173950028D564 /* IceBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D080231173950028D564 /* IceBlueViewController.swift */; };
+		9831D085231173950028D564 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D081231173950028D564 /* BlueViewController.swift */; };
+		9831D087231173CC0028D564 /* CoordinatorRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D086231173CC0028D564 /* CoordinatorRed.swift */; };
+		9831D08E231173D60028D564 /* PinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9831D088231173D60028D564 /* PinkViewController.xib */; };
+		9831D08F231173D60028D564 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D089231173D60028D564 /* PinkViewController.swift */; };
+		9831D090231173D60028D564 /* WineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D08A231173D60028D564 /* WineViewController.swift */; };
+		9831D091231173D60028D564 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D08B231173D60028D564 /* RedViewController.swift */; };
+		9831D092231173D60028D564 /* RedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9831D08C231173D60028D564 /* RedViewController.xib */; };
+		9831D093231173D60028D564 /* WineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9831D08D231173D60028D564 /* WineViewController.xib */; };
+		9831D0982311C4C80028D564 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D0952311C4C80028D564 /* CoordinatorFactory.swift */; };
+		9831D0992311C4C80028D564 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D0962311C4C80028D564 /* Route.swift */; };
+		9831D09A2311C4C80028D564 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D0972311C4C80028D564 /* ControllerFactory.swift */; };
+		9831D09D2311C50B0028D564 /* Bool+Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D09C2311C50B0028D564 /* Bool+Animated.swift */; };
+		9831D0A02311C52C0028D564 /* CoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831D09F2311C52C0028D564 /* CoordinatorManager.swift */; };
 		98CA7CE71E23EB0D0078F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */; };
 		98CA7CEE1E23EB0D0078F798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA7CED1E23EB0D0078F798 /* Assets.xcassets */; };
 		98CA7CF11E23EB0D0078F798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CA7CEF1E23EB0D0078F798 /* LaunchScreen.storyboard */; };
-		98CA7CF91E23EB250078F798 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CF81E23EB250078F798 /* GreenViewController.swift */; };
-		98CA7CFB1E23EB330078F798 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CFA1E23EB330078F798 /* RedViewController.swift */; };
-		98CA7CFD1E23EB3D0078F798 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */; };
-		98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D021E23FD060078F798 /* Coordinator1.swift */; };
-		98CA7D051E23FD0E0078F798 /* Coordinator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D041E23FD0E0078F798 /* Coordinator2.swift */; };
-		98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */; };
-		98CA7D0D1E2401FA0078F798 /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA7D0C1E2401FA0078F798 /* Dismissable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		785452BE1E2D496200688687 /* NodeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeFactory.swift; sourceTree = "<group>"; };
-		981962FD1E24186300848F13 /* NodeFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeFactoryProtocol.swift; sourceTree = "<group>"; };
-		981963031E241B4F00848F13 /* BrownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownViewController.swift; sourceTree = "<group>"; };
-		981963051E241BF000848F13 /* BrownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrownView.xib; sourceTree = "<group>"; };
-		981963091E241CFF00848F13 /* BrownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownView.swift; sourceTree = "<group>"; };
-		9819630C1E241F1600848F13 /* GreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
-		9819630E1E241F5200848F13 /* GreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenView.xib; sourceTree = "<group>"; };
-		981963141E2421FB00848F13 /* BlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
-		981963161E24222D00848F13 /* RedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
-		981963181E24224B00848F13 /* BlueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
-		9819631A1E24232400848F13 /* RedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedView.xib; sourceTree = "<group>"; };
-		9879EBCD1E258F8B00C973C1 /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		9831D06E23115C840028D564 /* FinishControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishControllerProtocol.swift; sourceTree = "<group>"; };
+		9831D06F23115C840028D564 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9831D07023115C840028D564 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		9831D075231172C60028D564 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		9831D07C2311738E0028D564 /* CoordinatorBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorBlue.swift; sourceTree = "<group>"; };
+		9831D07E231173950028D564 /* IceBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IceBlueViewController.xib; sourceTree = "<group>"; };
+		9831D07F231173950028D564 /* BlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueViewController.xib; sourceTree = "<group>"; };
+		9831D080231173950028D564 /* IceBlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceBlueViewController.swift; sourceTree = "<group>"; };
+		9831D081231173950028D564 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		9831D086231173CC0028D564 /* CoordinatorRed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorRed.swift; sourceTree = "<group>"; };
+		9831D088231173D60028D564 /* PinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinkViewController.xib; sourceTree = "<group>"; };
+		9831D089231173D60028D564 /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
+		9831D08A231173D60028D564 /* WineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineViewController.swift; sourceTree = "<group>"; };
+		9831D08B231173D60028D564 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		9831D08C231173D60028D564 /* RedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedViewController.xib; sourceTree = "<group>"; };
+		9831D08D231173D60028D564 /* WineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WineViewController.xib; sourceTree = "<group>"; };
+		9831D0952311C4C80028D564 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		9831D0962311C4C80028D564 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9831D0972311C4C80028D564 /* ControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		9831D09C2311C50B0028D564 /* Bool+Animated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Animated.swift"; sourceTree = "<group>"; };
+		9831D09F2311C52C0028D564 /* CoordinatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorManager.swift; sourceTree = "<group>"; };
 		98CA7CE31E23EB0D0078F798 /* CoordinatorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98CA7CED1E23EB0D0078F798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CA7CF01E23EB0D0078F798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CA7CF21E23EB0D0078F798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98CA7CF81E23EB250078F798 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
-		98CA7CFA1E23EB330078F798 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
-		98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
-		98CA7D021E23FD060078F798 /* Coordinator1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator1.swift; sourceTree = "<group>"; };
-		98CA7D041E23FD0E0078F798 /* Coordinator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator2.swift; sourceTree = "<group>"; };
-		98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		98CA7D0C1E2401FA0078F798 /* Dismissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,65 +73,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		981962F61E24170F00848F13 /* Protocols */ = {
+		9831D06D23115C5C0028D564 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				98CA7D061E23FD300078F798 /* CoordinatorProtocol.swift */,
-				98CA7D0C1E2401FA0078F798 /* Dismissable.swift */,
-				981962FD1E24186300848F13 /* NodeFactoryProtocol.swift */,
-				9879EBCD1E258F8B00C973C1 /* ActionView.swift */,
+				9831D06F23115C840028D564 /* Coordinator.swift */,
+				9831D06E23115C840028D564 /* FinishControllerProtocol.swift */,
+				9831D07023115C840028D564 /* Presenter.swift */,
 			);
-			name = Protocols;
+			path = Protocol;
 			sourceTree = "<group>";
 		};
-		981962FF1E24195900848F13 /* Factory */ = {
+		9831D07423116E100028D564 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				785452BE1E2D496200688687 /* NodeFactory.swift */,
+				9831D075231172C60028D564 /* Errors.swift */,
 			);
-			name = Factory;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		981963001E241A9700848F13 /* ViewController */ = {
+		9831D077231172E10028D564 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				9819630B1E241F0300848F13 /* View */,
-				98CA7CF81E23EB250078F798 /* GreenViewController.swift */,
-				981963031E241B4F00848F13 /* BrownViewController.swift */,
+				9831D07A231172FC0028D564 /* Red */,
+				9831D078231172EA0028D564 /* Blue */,
 			);
-			name = ViewController;
+			path = Flows;
 			sourceTree = "<group>";
 		};
-		9819630B1E241F0300848F13 /* View */ = {
+		9831D078231172EA0028D564 /* Blue */ = {
 			isa = PBXGroup;
 			children = (
-				981963051E241BF000848F13 /* BrownView.xib */,
-				981963091E241CFF00848F13 /* BrownView.swift */,
-				9819630C1E241F1600848F13 /* GreenView.swift */,
-				9819630E1E241F5200848F13 /* GreenView.xib */,
+				9831D07C2311738E0028D564 /* CoordinatorBlue.swift */,
+				9831D079231172EF0028D564 /* Controller */,
 			);
-			name = View;
+			path = Blue;
 			sourceTree = "<group>";
 		};
-		981963121E2421E600848F13 /* ViewController */ = {
+		9831D079231172EF0028D564 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				981963131E2421EF00848F13 /* View */,
-				98CA7CFA1E23EB330078F798 /* RedViewController.swift */,
-				98CA7CFC1E23EB3D0078F798 /* BlueViewController.swift */,
+				9831D081231173950028D564 /* BlueViewController.swift */,
+				9831D07F231173950028D564 /* BlueViewController.xib */,
+				9831D080231173950028D564 /* IceBlueViewController.swift */,
+				9831D07E231173950028D564 /* IceBlueViewController.xib */,
 			);
-			name = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		981963131E2421EF00848F13 /* View */ = {
+		9831D07A231172FC0028D564 /* Red */ = {
 			isa = PBXGroup;
 			children = (
-				981963141E2421FB00848F13 /* BlueView.swift */,
-				981963181E24224B00848F13 /* BlueView.xib */,
-				981963161E24222D00848F13 /* RedView.swift */,
-				9819631A1E24232400848F13 /* RedView.xib */,
+				9831D086231173CC0028D564 /* CoordinatorRed.swift */,
+				9831D07B231173020028D564 /* Controller */,
 			);
-			name = View;
+			path = Red;
+			sourceTree = "<group>";
+		};
+		9831D07B231173020028D564 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9831D089231173D60028D564 /* PinkViewController.swift */,
+				9831D088231173D60028D564 /* PinkViewController.xib */,
+				9831D08B231173D60028D564 /* RedViewController.swift */,
+				9831D08C231173D60028D564 /* RedViewController.xib */,
+				9831D08A231173D60028D564 /* WineViewController.swift */,
+				9831D08D231173D60028D564 /* WineViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9831D0942311C45F0028D564 /* Factorys */ = {
+			isa = PBXGroup;
+			children = (
+				9831D0972311C4C80028D564 /* ControllerFactory.swift */,
+				9831D0952311C4C80028D564 /* CoordinatorFactory.swift */,
+				9831D0962311C4C80028D564 /* Route.swift */,
+			);
+			path = Factorys;
+			sourceTree = "<group>";
+		};
+		9831D09B2311C4F40028D564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9831D09C2311C50B0028D564 /* Bool+Animated.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9831D09E2311C51B0028D564 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9831D09F2311C52C0028D564 /* CoordinatorManager.swift */,
+				98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		98CA7CDA1E23EB0D0078F798 = {
@@ -149,34 +188,17 @@
 		98CA7CE51E23EB0D0078F798 /* CoordinatorProject */ = {
 			isa = PBXGroup;
 			children = (
-				981962FF1E24195900848F13 /* Factory */,
-				981962F61E24170F00848F13 /* Protocols */,
-				98CA7D011E23FCF70078F798 /* Coordinator2 */,
-				98CA7D001E23FCE90078F798 /* Coordinator1 */,
-				98CA7CE61E23EB0D0078F798 /* AppDelegate.swift */,
+				9831D09E2311C51B0028D564 /* Application */,
+				9831D09B2311C4F40028D564 /* Extensions */,
+				9831D0942311C45F0028D564 /* Factorys */,
+				9831D077231172E10028D564 /* Flows */,
+				9831D07423116E100028D564 /* Utils */,
+				9831D06D23115C5C0028D564 /* Protocol */,
 				98CA7CED1E23EB0D0078F798 /* Assets.xcassets */,
 				98CA7CEF1E23EB0D0078F798 /* LaunchScreen.storyboard */,
 				98CA7CF21E23EB0D0078F798 /* Info.plist */,
 			);
 			path = CoordinatorProject;
-			sourceTree = "<group>";
-		};
-		98CA7D001E23FCE90078F798 /* Coordinator1 */ = {
-			isa = PBXGroup;
-			children = (
-				981963001E241A9700848F13 /* ViewController */,
-				98CA7D021E23FD060078F798 /* Coordinator1.swift */,
-			);
-			name = Coordinator1;
-			sourceTree = "<group>";
-		};
-		98CA7D011E23FCF70078F798 /* Coordinator2 */ = {
-			isa = PBXGroup;
-			children = (
-				981963121E2421E600848F13 /* ViewController */,
-				98CA7D041E23FD0E0078F798 /* Coordinator2.swift */,
-			);
-			name = Coordinator2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,19 +228,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Fabio Miciano";
 				TargetAttributes = {
 					98CA7CE21E23EB0D0078F798 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 5Q9BNQP6J7;
+						DevelopmentTeam = 24JK3C3F29;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 98CA7CDE1E23EB0D0078F798 /* Build configuration list for PBXProject "CoordinatorProject" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -239,11 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9819631B1E24232400848F13 /* RedView.xib in Resources */,
-				981963061E241BF000848F13 /* BrownView.xib in Resources */,
+				9831D092231173D60028D564 /* RedViewController.xib in Resources */,
 				98CA7CF11E23EB0D0078F798 /* LaunchScreen.storyboard in Resources */,
-				981963191E24224B00848F13 /* BlueView.xib in Resources */,
-				9819630F1E241F5200848F13 /* GreenView.xib in Resources */,
+				9831D093231173D60028D564 /* WineViewController.xib in Resources */,
+				9831D082231173950028D564 /* IceBlueViewController.xib in Resources */,
+				9831D08E231173D60028D564 /* PinkViewController.xib in Resources */,
+				9831D083231173950028D564 /* BlueViewController.xib in Resources */,
 				98CA7CEE1E23EB0D0078F798 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,22 +278,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CA7CFB1E23EB330078F798 /* RedViewController.swift in Sources */,
-				98CA7CF91E23EB250078F798 /* GreenViewController.swift in Sources */,
-				981962FE1E24186300848F13 /* NodeFactoryProtocol.swift in Sources */,
-				98CA7D051E23FD0E0078F798 /* Coordinator2.swift in Sources */,
-				9819630D1E241F1600848F13 /* GreenView.swift in Sources */,
-				981963171E24222D00848F13 /* RedView.swift in Sources */,
-				981963041E241B4F00848F13 /* BrownViewController.swift in Sources */,
-				785452BF1E2D496200688687 /* NodeFactory.swift in Sources */,
-				98CA7D071E23FD300078F798 /* CoordinatorProtocol.swift in Sources */,
-				98CA7D031E23FD060078F798 /* Coordinator1.swift in Sources */,
-				9879EBCE1E258F8B00C973C1 /* ActionView.swift in Sources */,
-				98CA7CFD1E23EB3D0078F798 /* BlueViewController.swift in Sources */,
-				98CA7D0D1E2401FA0078F798 /* Dismissable.swift in Sources */,
+				9831D087231173CC0028D564 /* CoordinatorRed.swift in Sources */,
+				9831D07D2311738E0028D564 /* CoordinatorBlue.swift in Sources */,
+				9831D084231173950028D564 /* IceBlueViewController.swift in Sources */,
+				9831D085231173950028D564 /* BlueViewController.swift in Sources */,
+				9831D0A02311C52C0028D564 /* CoordinatorManager.swift in Sources */,
+				9831D091231173D60028D564 /* RedViewController.swift in Sources */,
+				9831D0992311C4C80028D564 /* Route.swift in Sources */,
+				9831D090231173D60028D564 /* WineViewController.swift in Sources */,
+				9831D08F231173D60028D564 /* PinkViewController.swift in Sources */,
+				9831D09D2311C50B0028D564 /* Bool+Animated.swift in Sources */,
+				9831D07123115C840028D564 /* FinishControllerProtocol.swift in Sources */,
+				9831D076231172C60028D564 /* Errors.swift in Sources */,
 				98CA7CE71E23EB0D0078F798 /* AppDelegate.swift in Sources */,
-				981963151E2421FB00848F13 /* BlueView.swift in Sources */,
-				9819630A1E241CFF00848F13 /* BrownView.swift in Sources */,
+				9831D07323115C840028D564 /* Presenter.swift in Sources */,
+				9831D09A2311C4C80028D564 /* ControllerFactory.swift in Sources */,
+				9831D07223115C840028D564 /* Coordinator.swift in Sources */,
+				9831D0982311C4C80028D564 /* CoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,20 +316,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -334,6 +367,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -341,20 +375,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,6 +418,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -383,12 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5Q9BNQP6J7;
+				DEVELOPMENT_TEAM = 24JK3C3F29;
 				INFOPLIST_FILE = CoordinatorProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tikal.tech.CoordinatorProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miciano.CoordinatorProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -396,12 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5Q9BNQP6J7;
+				DEVELOPMENT_TEAM = 24JK3C3F29;
 				INFOPLIST_FILE = CoordinatorProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tikal.tech.CoordinatorProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miciano.CoordinatorProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
