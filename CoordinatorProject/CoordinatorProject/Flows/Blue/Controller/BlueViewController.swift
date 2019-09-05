@@ -11,14 +11,16 @@ enum BlueAction {
     case finishBlue
 }
 
-class BlueViewController: UIViewController {
-    var delegate: FinishControllerProtocol?
+class BlueViewController: UIViewController, Finish {
+    
+    typealias FinishAction = BlueAction
+    var finishCompletion: ((UIViewController, BlueAction) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func finishAction(_ sender: UIButton) {
-        self.delegate?.finishController(action: BlueAction.finishBlue)
+        self.callFinish(action: .finishBlue)
     }
 }

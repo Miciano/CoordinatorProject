@@ -6,8 +6,9 @@
 //  Copyright © 2019 Fabio Miciano. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol Coordinator: class {
+    var root: UINavigationController? { get set }
     func start()
 }

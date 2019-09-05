@@ -6,21 +6,21 @@
 //  Copyright © 2019 Fabio Miciano. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 typealias finishCoordinatorBlue = ((_ blue: CoordinatorBlue)->Void)
 protocol FinishinBlue {
     var finish: finishCoordinatorBlue? { get set }
 }
 
-final class CoordinatorBlue: Coordinator, FinishinBlue {
+final class CoordinatorBlue: Coordinator, FinishinBlue, Presenter {
     
-    private let presentable: Presentable
+    var root: UINavigationController?
     private let factory = ControllerFactoryImp()
     var finish: finishCoordinatorBlue?
     
-    init(presentable: Presentable) {
-        self.presentable = presentable
+    init(root: UINavigationController?) {
+        self.root = root
     }
     
     func start() {
@@ -29,14 +29,18 @@ final class CoordinatorBlue: Coordinator, FinishinBlue {
     
     func makeBlueController() {
         guard let controller = try? factory.makeBlueController() else { return }
-        controller.delegate = self
-        self.presentable.setRoot(controller: controller)
+        controller.finishCompletion = {(controller, action) in
+            self.finishBlue(action: action)
+        }
+        self.setRoot(controller: controller)
     }
     
     func makeIceBlueController() {
         guard let controller = try? factory.makeIceBlueController() else { return }
-        controller.delegate = self
-        self.presentable.push(controller: controller, animated: true)
+        controller.finishCompletion = {[weak self] (controller, action) in
+            self?.finishIceBlue(action: action)
+        }
+        self.push(controller: controller, animated: true)
     }
     
     
@@ -55,16 +59,3 @@ final class CoordinatorBlue: Coordinator, FinishinBlue {
     }
 }
 
-extension CoordinatorBlue: FinishControllerProtocol {
-    func finishController<T>(action: T) {
-        if let action = action as? BlueAction {
-            self.finishBlue(action: action)
-            return
-        }
-        
-        if let action = action as? IceBlueAction {
-            self.finishIceBlue(action: action)
-            return
-        }
-    }
-}

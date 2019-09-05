@@ -12,15 +12,16 @@ enum WineAction {
     case finishWine
 }
 
-class WineViewController: UIViewController {
+class WineViewController: UIViewController, Finish {
     
-    var delegate: FinishControllerProtocol?
+    typealias FinishAction = WineAction
+    var finishCompletion: ((UIViewController, WineAction) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func nextStep(_ sender: UIButton) {
-        self.delegate?.finishController(action: WineAction.finishWine)
+        self.callFinish(action: .finishWine)
     }
 }

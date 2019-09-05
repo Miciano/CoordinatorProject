@@ -19,13 +19,7 @@ protocol Presenter {
     func setRoot(controller: UIViewController)
 }
 
-struct Presentable: Presenter {
-    private let root: UINavigationController?
-    
-    init(root: UINavigationController?) {
-        self.root = root
-    }
-    
+extension Presenter where Self: Coordinator {
     func present(controller: UIViewController, animated: Bool, completion: emptyClosure?) {
         self.root?.present(controller, animated: animated.animatedWithEnviroment(), completion: completion)
     }

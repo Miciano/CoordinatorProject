@@ -12,7 +12,7 @@ import UIKit
 final class CoordinatorManager: Coordinator {
     private let factory: CoordinatorFactory
     
-    private weak var root: UINavigationController?
+    weak var root: UINavigationController?
     
     init(root: UINavigationController?, factory: CoordinatorFactory) {
         self.root = root

@@ -11,10 +11,12 @@ enum IceBlueAction {
     case finishIce
 }
 
-class IceBlueViewController: UIViewController {
-    var delegate: FinishControllerProtocol?
+class IceBlueViewController: UIViewController, Finish {
+    
+    typealias FinishAction = IceBlueAction
+    var finishCompletion: ((UIViewController, IceBlueAction) -> Void)?
     
     @IBAction func finishAction(_ sender: UIButton) {
-        self.delegate?.finishController(action: IceBlueAction.finishIce)
+        self.callFinish(action: .finishIce)
     }
 }

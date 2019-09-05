@@ -15,13 +15,13 @@ protocol CoordinatorFactory {
 
 struct CoordinatorFactoryImp: CoordinatorFactory {
     func makeCoordinatorRed(root: UINavigationController?, finish: @escaping finishCoordinatorRed) -> CoordinatorRed {
-        let red = CoordinatorRed(presentable: Presentable(root: root))
+        let red = CoordinatorRed(root: root)
         red.finish = finish
         return red
     }
     
     func makeCoordinatorBlue(root: UINavigationController?, finish: @escaping finishCoordinatorBlue) -> CoordinatorBlue {
-        let blue = CoordinatorBlue(presentable: Presentable(root: root))
+        let blue = CoordinatorBlue(root: root)
         blue.finish = finish
         return blue
     }

@@ -6,21 +6,21 @@
 //  Copyright © 2019 Fabio Miciano. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 typealias finishCoordinatorRed = ((_ red: CoordinatorRed)->Void)
 protocol FinishinRed {
     var finish: finishCoordinatorRed? { get set }
 }
 
-final class CoordinatorRed: Coordinator, FinishinRed {
+final class CoordinatorRed: Coordinator, Presenter {
     
-    private let presentable: Presentable
+    var root: UINavigationController?
     private let factory = ControllerFactoryImp()
     var finish: finishCoordinatorRed?
     
-    init(presentable: Presentable) {
-        self.presentable = presentable
+    init(root: UINavigationController?) {
+        self.root = root
     }
     
     func start() {
@@ -29,20 +29,27 @@ final class CoordinatorRed: Coordinator, FinishinRed {
     
     func makeRedController() {
         guard let controller = try? factory.makeRedController() else { return }
-        controller.delegate = self
-        self.presentable.setRoot(controller: controller)
+        controller.finishCompletion = {(controller, action) in
+            self.finishRed(action: action)
+        }
+        
+        self.setRoot(controller: controller)
     }
     
     func makeWineController() {
         guard let controller = try? factory.makeWineController() else { return }
-        controller.delegate = self
-        self.presentable.push(controller: controller, animated: true)
+        controller.finishCompletion = { [weak self] (controller, action) in
+            self?.finishWine(action: action)
+        }
+        self.push(controller: controller, animated: true)
     }
     
     func makePinkController() {
         guard let controller = try? factory.makePinkController() else { return }
-        controller.delegate = self
-        self.presentable.push(controller: controller, animated: true)
+        controller.finishCompletion = { [weak self] (controller, action) in
+            self?.finishPink(action: action)
+        }
+        self.push(controller: controller, animated: true)
     }
     
     private func finishRed(action: RedAction) {
@@ -63,25 +70,6 @@ final class CoordinatorRed: Coordinator, FinishinRed {
         switch action {
         case .finishPink:
             self.makeWineController()
-        }
-    }
-}
-
-extension CoordinatorRed: FinishControllerProtocol {
-    func finishController<T>(action: T) {
-        if let action = action as? RedAction {
-            self.finishRed(action: action)
-            return
-        }
-        
-        if let action = action as? PinkAction {
-            self.finishPink(action: action)
-            return
-        }
-        
-        if let action = action as? WineAction {
-            self.finishWine(action: action)
-            return
         }
     }
 }

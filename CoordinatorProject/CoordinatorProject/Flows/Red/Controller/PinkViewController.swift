@@ -12,15 +12,16 @@ enum PinkAction {
     case finishPink
 }
 
-class PinkViewController: UIViewController {
+class PinkViewController: UIViewController, Finish {
     
-    var delegate: FinishControllerProtocol?
+    typealias FinishAction = PinkAction
+    var finishCompletion: ((UIViewController, PinkAction) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func nextStep(_ sender: UIButton) {
-        self.delegate?.finishController(action: PinkAction.finishPink)
+        self.callFinish(action: .finishPink)
     }
 }

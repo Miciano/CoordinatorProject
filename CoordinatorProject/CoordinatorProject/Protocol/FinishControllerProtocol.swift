@@ -8,6 +8,13 @@
 
 import UIKit
 
-protocol FinishControllerProtocol {
-    func finishController<T>(action: T)
+protocol Finish {
+    associatedtype FinishAction
+    var finishCompletion: ((UIViewController, FinishAction) -> Void)? { get set }
+}
+
+extension Finish where Self: UIViewController{
+    func callFinish(action: FinishAction) {
+        self.finishCompletion?(self, action)
+    }
 }
