@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var manager: CoordinatorManager?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = UINavigationController()
         
-        let manager = CoordinatorManager(root: self.window?.rootViewController as? UINavigationController, factory: CoordinatorFactoryImp())
-        manager.start(route: nil)
+        manager = CoordinatorManager(root: self.window?.rootViewController as? UINavigationController, factory: CoordinatorFactoryImp())
+        manager?.start(route: nil)
         
         self.window?.makeKeyAndVisible()
         

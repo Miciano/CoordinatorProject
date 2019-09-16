@@ -29,8 +29,8 @@ final class CoordinatorBlue: Coordinator, FinishinBlue, Presenter {
     
     func makeBlueController() {
         guard let controller = try? factory.makeBlueController() else { return }
-        controller.finishCompletion = {(controller, action) in
-            self.finishBlue(action: action)
+        controller.finishCompletion = {[weak self](controller, action) in
+            self?.finishBlue(action: action)
         }
         self.setRoot(controller: controller)
     }
