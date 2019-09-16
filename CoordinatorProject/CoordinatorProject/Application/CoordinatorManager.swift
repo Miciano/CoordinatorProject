@@ -13,6 +13,7 @@ final class CoordinatorManager: Coordinator {
     private let factory: CoordinatorFactory
     
     weak var root: UINavigationController?
+    var currentCoordinator: Coordinator?
     
     init(root: UINavigationController?, factory: CoordinatorFactory) {
         self.root = root
@@ -37,20 +38,19 @@ final class CoordinatorManager: Coordinator {
     private func toDestiny(route: Route) {
         switch route {
         case .red:
-            let red = self.factory.makeCoordinatorRed(root: self.root, finish: finishRed)
+            let red = self.factory.makeCoordinatorRed(root: self.root) {[weak self] (coordinator) in
+                self?.currentCoordinator = nil
+                self?.toDestiny(route: .blue)
+            }
+            self.currentCoordinator = red
             red.start()
         case .blue:
-            let blue = self.factory.makeCoordinatorBlue(root: self.root, finish: finishBlue)
+            let blue = self.factory.makeCoordinatorBlue(root: self.root) {[weak self] (coordinator) in
+                self?.currentCoordinator = nil
+                self?.toDestiny(route: .red)
+            }
+            self.currentCoordinator = blue
             blue.start()
         }
-    }
-
-    //åMARK: -- FINISH FLOWS --
-    func finishRed(red: CoordinatorRed) {
-        self.toDestiny(route: .blue)
-    }
-    
-    func finishBlue(blue: CoordinatorBlue) {
-        self.toDestiny(route: .red)
     }
 }
